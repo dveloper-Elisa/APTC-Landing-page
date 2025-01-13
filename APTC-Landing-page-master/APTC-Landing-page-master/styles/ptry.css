@@ -1,0 +1,109 @@
+.hero{
+    display: flex;
+    background-image: url('../img/urea.jpg');
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    color: #fff;
+    box-shadow: rgb(86 157 0 / 40%) 0px 0px 0px 2000px inset;
+
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 60px;
+}
+
+.hero-content h1{
+    font-size: 14px;
+}
+.hero-content a, span{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* infor section */
+
+.info-section {
+    background-image: url('../img/bg.jpg');
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 13px;
+    line-height: 1rem;
+    align-items: center;
+    padding: 40px 0;
+}
+.alll{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+h2{
+    color: #549d00;
+    white-space: nowrap;
+    padding: 20px 0px;
+    font-size: 14px;
+}
+.info-section .container{
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    height: fit-content;
+}
+.info-section .container img{
+    width: 50%;
+}
+.info-section .container p{
+    padding: 10px 0px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    
+}
+.project h2{
+    background-color: #549d00;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: fit-content;
+    padding: 10px;
+}
+.projects-list a{
+    text-decoration: none;
+    color: #549d00;
+}
+
+.projects-list a:hover{
+    color: black;
+    transition: 0.5s ease;
+    scale: 1%;
+}
+.container h3{
+    font-size: 14px;
+}
+
+@media (max-width:768px){
+    .info-section .alll{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project{
+        width: 50%;
+        float: left;
+    }
+}
+
+
+
