@@ -71,7 +71,13 @@
 
         <section class="latest">
             <p>Our blogs</p>
-            <div id="news-container" class="news"></div>
+            <div id="news-container" class="news">
+                <?php
+
+                include "./blogsData.php";
+
+                ?>
+            </div>
             <div class="pagination">
                 <button id="prev-btn" disabled> < </button>
                 <span id="page-info">1</span>
@@ -130,6 +136,6 @@
                 Corporation</p>
         </div>
 
-        <script src="./multipledata/data.js"></script>
+        <!-- <script src="./multipledata/data.js"></script> -->
     </body>
 </html>

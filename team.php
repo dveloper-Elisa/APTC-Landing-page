@@ -1,3 +1,11 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+include "./admin/connection/bd_connection.php"
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -74,20 +82,34 @@
             <!-- team section -->
             <section class="team">
                 <div class="container">
-                    <div class="member">
-                        <img src="./img/1.png" alt>
-                        <h2>Lt Col. Alexandre KARASIRA</h2>
-                        <p>Deputy Chief executive Officer & Director of Finance
-                            and Administration</p>
-                        <strong>dceo@aptc.rw</strong>
-                    </div>
-                    <div class="member">
-                        <img src="./img/2.jpg" alt>
-                        <h2>Lt Col. Canisius KAYITERA</h2>
-                        <p>Director of Operations</p>
-                        <strong>dir_operation@aptc.rw</strong>
-                    </div>
-                    <div class="member">
+
+                    <?php
+                $query = "SELECT * FROM team";
+                $result = mysqli_query($connection, $query);
+
+                if(!$result){
+                    die("Query failed: " . mysqli_error($connection));
+                }
+
+                while($row = mysqli_fetch_assoc($result)){
+                    $img = $row['image'];
+                    $image = str_replace("../", "./admin/", $img);
+                    $name = $row['names'];
+                    $title = $row['title'];
+                    $email = $row['email'];
+                    echo "<div class='member'>
+                        <img src='$image' title='$name'>
+                        <h2>$name</h2>
+                        <p>$title</p>
+                        <strong>$email</strong>
+                    </div>";
+                }
+
+                    ?>
+
+
+
+                    <!-- <div class="member">
                         <img src="./img/125.jpg" alt>
                         <h2>Lt Col. Rogers KABUNGO</h2>
                         <p>Managing Director of Rugari Meat Processing</p>
@@ -105,7 +127,7 @@
                         <h2>Lt Col. Charles GAHIGI</h2>
                         <p>Managing Director of Nyanza Milk Industries</p>
                         <strong>mdnmi@nmi.rw</strong>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 

@@ -1,3 +1,7 @@
+<?php
+include "./admin/connection/bd_connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -96,25 +100,23 @@
 
                         </p>
                     </div>
-                    <div class="rular"></div>
-                    <div class="advert">
-                        <h3>ANNOUNCEMENT OF THE AUCTION 5TH-15TH DECEMBER
-                            2018</h3>
-                        <p>1. The management of Agro-Processing Trust
-                            Corporation (APTC) hereby informs the public that it
-                            will auction all types of vehicles, spare parts and
-                            machinery of all types.</p>
-                        <p>2. Anyone interested is welcome to visit Rugali Meat
-                            Processing Ltd at it’s premises located in
-                            Nyarugunga from 05/12/ to
-                            14/12/2023,kwizeraelissa369@gmail.com between
-                            9:00hrs and 17:00 hrs.</p>
-                        <p>3. The auction will be held in Nyargunga, where
-                            Rugali Meat Processing Ltd operates, on 15/12/2023
-                            starting at 9:00hrs.</p>
-                        <p>4. For more information please contact ; Tel +250
-                            788304692, +250 788647932.</p>
-                    </div>
+                    <?php
+
+                        $sql = "SELECT * FROM announcement";
+                        $result = mysqli_query($connection, $sql);
+
+                        while($row = mysqli_fetch_assoc($result))
+                        {$title =strtoupper($row['title']);
+                        $announcement = $row['announcement'];
+                        echo "<div id='advert'>
+                                <h3>$title</h3>
+                                <p>$announcement</p>
+                        </div>
+                        <div class='rular'></div>";
+                    
+                    }
+                    ?>
+
                 </div>
                 <div class="articles">
                     <div id="article"><p>Popular Articles</p></div>
