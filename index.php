@@ -1,3 +1,11 @@
+<?php
+error_reporting(E_ALL);
+ini_set("display_errors", '1');
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,33 +24,33 @@
                 <button class="toggler" onclick="toggleNav()">☰</button>
                 <ul id="nav-list">
                     <li class="menu-active" style="color: white;"><a href="./">Home</a></li>
-                    <li><a href="#">About Us</a>
+                    <li><a href="#">About Us <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="./whoweare.php">Who we are</a></li>
                             <li><a href="./team.php">Team</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Projects</a>
+                    <li><a href="#">Projects <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="poutry.php">APTC Poultry Farming</a></li>
                             <li><a href="./gako.php">GAKO Livestock Farm</a></li>
                             <li><a href="./fatilizer.php">Fertilizers and Seeds Distribution</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Subsidiaries</a>
+                    <li><a href="#">Subsidiaries <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="./meat.php">Rugali Meat Processing Industries</a></li>
                             <li><a href="./milk.php">Nyanza Milk Industries</a></li>
                             <li><a href="./agroindustrie.php">Agro Processing Industries</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Media</a>
+                    <li><a href="#">Media <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="./gallery.php">Gallery</a></li>
                             <li><a href="./blog.php">Blogs</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Resources</a>
+                    <li><a href="#">Resources <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="./career.php">Career</a></li>
                         </ol>
@@ -169,7 +177,11 @@
 
            <section class="latest">
             <p>Latest News</p>
-            <div id="news-container" class="news"></div>
+            <div id="news-container" class="news">
+                <?php
+                include "./blogsData.php";
+                ?>
+            </div>
             <div class="pagination">
               <button id="prev-btn" disabled> < </button>
               <span id="page-info">1</span>

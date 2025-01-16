@@ -17,30 +17,30 @@
                     <li><a href="#">About Us</a>
                         <ol>
                             <li><a href="#">Who we are</a></li>
-                            <li><a href="./team.php">Update Team</a></li>
+                            <li><a href="./updates/team.php">Update Team</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Projects</a>
+                    <li><a href="#">Projects  <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="poutry.php">APTC Poultry Farming</a></li>
                             <li><a href="./gako.php">GAKO Livestock Farm</a></li>
                             <li><a href="./fatilizer.php">Fertilizers and Seeds Distribution</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Subsidiaries</a>
+                    <li><a href="#">Subsidiaries <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="./meat.php">Rugali Meat Processing Industries</a></li>
                             <li><a href="./milk.php">Nyanza Milk Industries</a></li>
                             <li><a href="./agroindustrie.php">Agro Processing Industries</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Media</a>
+                    <li><a href="#">Media <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="./updates/gallery.php">Update Gallery</a></li>
                             <li><a href="./updates/blogs.php">Blogs</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Resources</a>
+                    <li><a href="#">Resources <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="./updates/announcement.php">Update Career</a></li>
                         </ol>
@@ -59,6 +59,8 @@
             </nav>
         </div>
 </div>
+
+
 
 
 <script src="../multipledata/data.js"></script>

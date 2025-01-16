@@ -59,28 +59,51 @@ if(isset($_POST['uploadBlogs'])){
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update blogs</title>
+    <title>Update Blogs</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
 </head>
-<body>
+<body class="bg-lime-200">
+
     <?php
     include "./header.php";
-
     ?>
+    <div class="min-h-screen flex flex-col items-center justify-center">
+    <form action="" method="post" enctype="multipart/form-data" 
+        class="bg-white shadow-lg rounded-lg p-5 w-md">
+        <h3 class="text-2xl font-bold text-lime-700 mb-5">Update Blogs</h3>
 
-    <form action="" method="post" enctype="multipart/form-data">
-    <h3>Update blogs</h3>
-    <input type="text" name="title" placeholder="Enter blog title" required>
-    <textarea type="text" name="blog" placeholder="Enter full blog body" required> </textarea>
-    <input type="file" name="image">
-    <button type="submit" name="uploadBlogs">Upload</button>
+        <div class="mb-4">
+            <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Blog Title</label>
+            <input type="text" name="title" id="title" placeholder="Enter blog title"
+                class="shadow appearance-none border border-lime-700 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                required>
+        </div>
+
+        <div class="mb-4">
+            <label for="blog" class="block text-gray-700 text-sm font-bold mb-2">Blog Body</label>
+            <textarea name="blog" id="blog" placeholder="Enter full blog body" rows="6"
+                class="shadow appearance-none border border-lime-700 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                required></textarea>
+        </div>
+
+        <div class="mb-4">
+            <label for="image" class="block text-gray-700 text-sm font-bold mb-2">Upload Image</label>
+            <input type="file" name="image" id="image"
+                class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border file:border-gray-300 file:text-lime-700 file:bg-white hover:file:bg-gray-100">
+        </div>
+
+        <button type="submit" name="uploadBlogs"
+            class="bg-lime-700 text-white font-bold py-2 px-4 rounded hover:bg-lime-800 focus:outline-none focus:shadow-outline">
+            Upload
+        </button>
     </form>
-
-
+    </div>
 </body>
+</html>
+
 </html>
