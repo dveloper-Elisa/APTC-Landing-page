@@ -14,29 +14,31 @@
                 <button class="toggler" onclick="toggleNav()">☰</button>
                 <ul id="nav-list">
                     <li class="menu-active" style="color: white;"><a href="./dashboard.php">Home</a></li>
-                    <li><a href="#">About Us</a>
+                    <li><a href="#">About Us <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
-                            <li><a href="#">Who we are</a></li>
+                            <!-- <li><a href="#">Who we are</a></li> -->
                             <li><a href="./updates/team.php">Update Team</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Projects  <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                    <!-- project -->
+                    <!-- <li><a href="#">Projects  <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="poutry.php">APTC Poultry Farming</a></li>
                             <li><a href="./gako.php">GAKO Livestock Farm</a></li>
                             <li><a href="./fatilizer.php">Fertilizers and Seeds Distribution</a></li>
                         </ol>
-                    </li>
-                    <li><a href="#">Subsidiaries <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                    </li> -->
+                    <!-- subsidiary -->
+                    <!-- <li><a href="#">Subsidiaries <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
                             <li><a href="./meat.php">Rugali Meat Processing Industries</a></li>
                             <li><a href="./milk.php">Nyanza Milk Industries</a></li>
                             <li><a href="./agroindustrie.php">Agro Processing Industries</a></li>
                         </ol>
-                    </li>
+                    </li> -->
                     <li><a href="#">Media <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                         <ol>
-                            <li><a href="./updates/gallery.php">Update Gallery</a></li>
+                            <!-- <li><a href="./updates/gallery.php">Update Gallery</a></li> -->
                             <li><a href="./updates/blogs.php">Blogs</a></li>
                         </ol>
                     </li>
@@ -47,7 +49,7 @@
                     </li>
                     <li><a href="#"><?php echo $_SESSION['email'] ?></a>
                     <ol>
-                        <li><a href="./uploads/logout.php">Logout</a></li>
+                        <li><a href="./updates/logout.php">Logout</a></li>
                         </ol>
                     </li>
                 </ul>

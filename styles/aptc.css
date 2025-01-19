@@ -162,13 +162,12 @@ body {
   }
 
   .navigation ul.active {
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
-    top: 9vh;
     display: flex;
     background-color: #000;
-    width: fit-content;
-    padding: 2px 30px 2px 5px;
+    /* width: 30vw; */
+    padding: 2px 2px;
   }
 
   .navigation ul li ol {

@@ -19,10 +19,13 @@ if(!isset($_SESSION['email'])){
     <title>Signup Page</title>
     <script src="https://cdn.tailwindcss.com" defer></script>
 </head>
+<?php
+    include "./header.php";
+    ?>
+<body class="bg-green-400 ">
 
-<body class="bg-green-400 flex items-center justify-center min-h-screen">
-    <div id="container" class="text-lime-700 bg-white p-3 lg:w-[25%] md:w-[50%] sm:w-[50%] w-[50%] rounded-lg">
-        <form action="./controllers/signupserver.php" method="post" class="space-y-6">
+    <div id="container" class="text-lime-700 rounded-lg flex items-center justify-center min-h-screen">
+        <form action="./controllers/signupserver.php" method="post" class="space-y-6 bg-white p-3 lg:w-[25%] md:w-[50%] sm:w-[50%] w-[50%]">
             <p class="text-2xl font-bold text-center">Create Account Here</p>
 
             <div class="space-y-4">
