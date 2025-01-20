@@ -68,7 +68,6 @@
         </section>
 
         <!-- blogs -->
-
         <section class="latest">
             <p>Our blogs</p>
             <div id="news-container" class="news">

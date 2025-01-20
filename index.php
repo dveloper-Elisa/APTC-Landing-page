@@ -14,6 +14,7 @@ ini_set("display_errors", '1');
     <title>Agro Processing Trust Corporation</title>
     <link rel="stylesheet" href="./styles/aptc.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com" defer></script> -->
 </head>
 <body>
 
@@ -190,11 +191,20 @@ ini_set("display_errors", '1');
           </section>
           
 
+          <!-- twitter posts -->
+          <div class="twitter">
+            <h1>APTC Twitter</h1>
+  <div class="rounded-lg shadow-lg p-4 bg-white w-full max-w-md md:max-w-lg lg:max-w-xl">
+  <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Our Milk our Better Life <a href="https://twitter.com/RwandaDairy?ref_src=twsrc%5Etfw">@RwandaDairy</a> <a href="https://twitter.com/RwandaAgri?ref_src=twsrc%5Etfw">@RwandaAgri</a> 🇷🇼🇷🇼 <a href="https://t.co/kd6oGd52k7">pic.twitter.com/kd6oGd52k7</a></p>&mdash; Agro-Processing Trust Corporation (@AgroAptc) <a href="https://twitter.com/AgroAptc/status/1668973182651432962?ref_src=twsrc%5Etfw">June 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
+
+
            <!-- client -->
             <section class="client">
                 <div class="clients">
                     <h3>Clients</h3>
-                    <marquee behavior="alternate" direction="" scrollamount="1">
+                    <marquee behavior="alternate" direction="" scrollamount="3">
                         <img src="./img/air.jpg" alt="Rwanda Air">
                         <img src="./img/mariote.jpg" alt="Rwanda Air">
                         <img src="./img/mess.png" alt="Rwanda Air">

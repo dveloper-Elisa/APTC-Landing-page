@@ -156,18 +156,18 @@ body {
     flex-direction: column;
     width: 100%;
   }
-
   .header img {
     width: 200px;
   }
 
   .navigation ul.active {
-    /* position: absolute; */
+    position: absolute;
     z-index: 1;
+    top: 9vh;
     display: flex;
     background-color: #000;
-    /* width: 30vw; */
-    padding: 2px 2px;
+    width: fit-content;
+    padding: 2px 30px 2px 5px;
   }
 
   .navigation ul li ol {
@@ -468,6 +468,17 @@ button:hover {
   color: #569d00;
   font-size: larger;
   font-weight: 700;
+}
+
+.twitter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+  background-color: #2324246e;
 }
 
 .news {
